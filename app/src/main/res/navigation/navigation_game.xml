@@ -29,5 +29,20 @@
         <argument
             android:name="playerName"
             app:argType="string" />
+        <action
+            android:id="@+id/actionResult"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="id.ac.ubaya.informatika.adv160420015week2.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="score"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionMain"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
